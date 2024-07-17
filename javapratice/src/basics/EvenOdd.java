@@ -1,7 +1,6 @@
 package basics;
 
 public class EvenOdd {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int num = 20;
@@ -12,5 +11,4 @@ public class EvenOdd {
 			System.out.println("Odd");
 		}
 	}
-
 }

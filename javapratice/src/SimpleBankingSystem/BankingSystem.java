@@ -12,10 +12,10 @@ class BankAccount{
 	void displayAccountInfo() {
 		System.out.println("Account Number : "+accountNumber);
 		System.out.println("Account Holder Name : "+accountHolderName);
-		System.out.println("Balance : "+balance);
+		System.out.println("Balance : "+balance+"\n------------------------------------------------------");
 	}
 	void deposit(double amount) {
-		balance +=amount;
+		balance += amount;
 	}
 	void withdraw(double amount) {
 		if((balance-amount)<0) {
@@ -23,14 +23,15 @@ class BankAccount{
 		}
 		else {
 			balance-=amount;
+			System.out.println("Your available Balance is "+balance+"\n--------------------------------------------------------");
 		}
 	}
+	
 }
 
 public class BankingSystem {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		BankAccount account = new BankAccount("123456789","Kotha Ganesh",500.0);
 		account.displayAccountInfo();
 		account.deposit(1000);

@@ -1,10 +1,10 @@
 package basics;
-
+import java.util.Scanner;
 public class MaxOfTwoNumbers {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int num1 = 10, num2 = 20;
+		Scanner sc = new Scanner(System.in);
+		int num1 = sc.nextInt();
+		int num2 = sc.nextInt();
 		System.out.println(num1>num2?num1:num2);
 		}
 

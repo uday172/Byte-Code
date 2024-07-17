@@ -1,14 +1,12 @@
 package basics;
 import java.util.Scanner;
-public class MaxOfThree {
-
+public class DisibleBy4and100 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		int a = sc.nextInt();
-		int b = sc.nextInt();
-		int c = sc.nextInt();
-		System.out.println(a>b?(a>c?a:c):(b>c?b:c));
+		int n = sc.nextInt();
+		if(n%4==0 && n%100==0) {
+			System.out.println("Divisible");
+		}
 	}
-
 }

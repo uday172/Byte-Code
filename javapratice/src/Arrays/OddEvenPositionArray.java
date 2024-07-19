@@ -21,16 +21,22 @@ public class OddEvenPositionArray {
 		int l = 0;
 		int h = 0;
 		while(h<n) {
-			if(arr[h]%2==0 && l%2==0 && arr[h]!=0) {
+			if(arr[h]%2==0 && l%2==0 &&arr[h]!=0) {
 				if(l!=h) {
 					swap(l,h,arr);
 					l++;
+				}
+				else {
+					h++;
 				}
 			}
 			else if(arr[h]%2!=0 && l%2!=0){
 				if(l!=h) {
 					swap(l,h,arr);
 					l++;	
+				}
+				else {
+					h++;
 				}
 			}
 			else {

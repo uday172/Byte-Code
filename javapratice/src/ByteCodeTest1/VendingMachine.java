@@ -1,5 +1,6 @@
 package ByteCodeTest1;
 import java.util.Scanner;
+//this is in git
 class store{
 	private String arr[] = {"apples","choclates","Buiscuits","Mangos","Bananas"};
 	private int arr1[] = {180,70,70,100,50};

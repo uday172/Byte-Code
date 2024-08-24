@@ -8,5 +8,6 @@ public class DisibleBy4and100 {
 		if(n%4==0 && n%100==0) {
 			System.out.println("Divisible");
 		}
+		sc.close();
 	}
 }

@@ -7,5 +7,6 @@ public class CubeUptoAGivenNumber {
 		for(int i=1;i<=n;i++) {
 			System.out.println((int)Math.pow(i,3));
 		}
+		sc.close();
 	}
 }

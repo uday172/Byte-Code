@@ -27,6 +27,7 @@ public class FindMissingArray {
 				System.out.println("Missing Value is "+i);
 			}
 		}
+		sc.close();
 	}
 
 }

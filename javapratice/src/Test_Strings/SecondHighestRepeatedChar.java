@@ -21,7 +21,7 @@ public class SecondHighestRepeatedChar {
 		int cnt1 = cnt;
 		char ans1 = ans;
 		for(char i : map.keySet()) {
-			System.out.println(i + " " +map.get(i));
+//			System.out.println(i + " " +map.get(i));
 			int n = map.get(i);
 			if(n > cnt) {
 				cnt1 = cnt;
@@ -29,7 +29,7 @@ public class SecondHighestRepeatedChar {
 				cnt = n;
 				ans = i;
 			}
-			else if(n<cnt && n>cnt1) {
+			else if(n<cnt && n>=cnt1) {
 				cnt1 = n;
 				ans1 = i;
 			}

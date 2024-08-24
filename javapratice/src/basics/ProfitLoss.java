@@ -14,5 +14,6 @@ public class ProfitLoss {
 		else {
 			System.out.println("no profit no loss");
 		}
+		sc.close();
 	}
 }

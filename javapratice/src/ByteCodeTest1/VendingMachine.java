@@ -61,5 +61,6 @@ class VendingMachine{
 				System.out.println("Enter correct Number");
 			}
 		}
+		sc.close();
 	}
 }

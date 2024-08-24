@@ -13,5 +13,6 @@ class Harshad{
 		}
 		if(t%s==0) System.out.println("Harshad Number");
 		else System.out.println("Not an Harshad Number");
+		sc.close();
 	}
 }

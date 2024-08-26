@@ -18,7 +18,6 @@ public class UpadatingTableJDBC {
 	}
 	
 	public static void insertSql(int id , String name , int age) {
-		getConnection();
 		try {
 			Statement st = con.createStatement();
 			String query = "insert into student values("+id+",'"+name+"',"+age+")";
@@ -29,7 +28,7 @@ public class UpadatingTableJDBC {
 			e.printStackTrace();
 		}
 	}
-	
+	 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int id;
@@ -40,6 +39,7 @@ public class UpadatingTableJDBC {
 		String name = sc.nextLine();
 		System.out.println("Enter age :");
 		int age = sc.nextInt();
+		getConnection();
 		insertSql(id,name,age);
 		sc.close();
 	}
